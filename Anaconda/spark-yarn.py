@@ -13,3 +13,5 @@ def mod(x):
 
 rdd = sc.parallelize(range(1000)).map(mod).take(10)
 print rdd
+
+#command to run this job : PYSPARK_PYTHON=/opt/anaconda/bin/python spark-submit --master yarn-cluster --conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=/opt/anaconda/bin/python spark-yarn.py
